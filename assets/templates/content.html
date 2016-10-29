@@ -1,0 +1,122 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="">
+            <ui-gmap-google-map control="control" center='map.center' zoom='map.zoom'>
+
+                <ui-gmap-marker ng-show="currentPosition" coords="currentPositionMarker.coords" options="currentPositionMarker.options" events="currentPositionMarker.events"
+                    idkey="currentPositionMarker.id">
+                </ui-gmap-marker>
+
+                <ui-gmap-marker 
+                    ng-repeat="(recipeGroup, groupRecipes) in recipes | groupBy: 'coordinates'"
+                    ng-show="true"
+                    options="marker.options"
+                    click="toggleSelectedMarker(groupRecipes[0].id)"
+                    coords="groupRecipes[0].coordinates" 
+                    idkey="groupRecipes[0].id">
+                    
+                    <ui-gmap-window show="selectedMarkerId == groupRecipes[0].id" templateUrl="'templates/map_recipe_window.html'" templateParameter="groupRecipes" ng-cloak>
+
+                    </ui-gmap-window>
+                    
+                </ui-gmap-marker>
+
+            </ui-gmap-google-map>
+            <input type="text" ng-model="format" class="form-control input_text_home">
+        </div>
+
+
+        <div class="col-md-12 text-center">
+            <h2>TITOLO</h2>
+        </div>
+
+        <div class="col-md-12">
+            <hr/>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a ui-sref="app.detail"  title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    
+                </div>
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+                <div class = "col-md-4">
+                    <div class="card-base">
+                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
+                            <div class="card-data widgetCardData">
+                                <h2 class="box-title">Azienda</h2>
+                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
+                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -25,11 +25,15 @@ angular.module('appRoutes', []).config([
              * Stato genitore organizzato in 3 view.
              */
             .state('app', {
-                url: '/',
+                url: '/app',
                 views: {
                     '': {
                         templateUrl: 'templates/app.html',
                         controller: 'MasterCtrl'
+                    },
+                    'content@app': {
+                        templateUrl: 'templates/content.html',
+                        controller: 'MapsCtrl'
                     },
                     'navbar@app': {
                         templateUrl: 'templates/navbar.html',
@@ -43,6 +47,22 @@ angular.module('appRoutes', []).config([
                     //}
                 }]
             })
+            
+            .state('app.detail', {
+                url: '/detail',
+                views: {
+                    'content@app': {
+                        templateUrl: 'templates/detail.html',
+                        controller: "DetailCtrl"
+                    }
+                },
+                onEnter: ['$state', function ($state) {
+                    //if (!Auth.isLoggedIn()) {
+                    //    $state.go('login');
+                    //}
+                }]
+            })
+
 
         // disabilito la necessità dei # nelle URL
         $locationProvider.html5Mode(true);
