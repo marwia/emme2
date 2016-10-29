@@ -9,11 +9,17 @@ module.exports = {
 
     attributes: {
 
-        nome: {type: 'string', required: true},
+        nome: { type: 'string', required: true },
 
-        email: {type: 'email', required: true},
+        email: { type: 'email', required: true },
 
-        indirizzo: {type: 'string', required: true}
+        indirizzo: { type: 'string', required: true },
+
+        // product list
+        shoppingLists: {
+            collection: 'shoppingList',
+            via: 'gas'
+        },
     }
 };
 
