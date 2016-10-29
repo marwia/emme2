@@ -2,7 +2,7 @@
   "name": "emme2",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "a emme2 application",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
