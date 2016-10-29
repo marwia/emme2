@@ -20,6 +20,9 @@ module.exports = {
         telefono : { type: 'String', required: true },
         cuaa : { type: 'String', required: true },
         attivita : { type: 'String', required: true },
+
+        latitude : { type: 'String'},
+        longitude : { type: 'String'},
     }
 };
 
