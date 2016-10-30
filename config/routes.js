@@ -33,15 +33,16 @@ module.exports.routes = {
   ***************************************************************************/
 
 
-  'get /': {
+  'get /app': {
     view: 'index'
-  },
+  }
+  /*,
 
  'get *': { 
    view: 'index', 
    skipAssets: true, 
    skipRegex: /^\/api\/.$|csrfToken|^\/terms|^\/info|^\/cookie|^\/privacy|^\/about/
-  }
+  }*/
 
   /***************************************************************************
   *                                                                          *
