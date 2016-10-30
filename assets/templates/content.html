@@ -27,7 +27,7 @@
 
 
         <div class="col-md-12 text-center">
-            <h2>TITOLO</h2>
+            <h2>AZIENDE BIO SOLIDALI</h2>
         </div>
 
         <div class="col-md-12">
@@ -37,83 +37,18 @@
         <div class="col-md-12">
             <div class="row">
 
-                <div class = "col-md-4">
+                <div class = "col-md-4" ng-repeat="company in companies">
                     <div class="card-base">
                         <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
                             <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a ui-sref="app.detail"  title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
+                                <h2 class="box-title">{{company.titolo}}</h2>
+                                <p class="card-block text-center">{{company.desc}}</p>
+                                <a ui-sref="app.detail"  title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  APRI </a>
                             </div>
                         </div>
                         <div class="space"></div>
                     </div>
                     
-                </div>
-
-                <div class = "col-md-4">
-                    <div class="card-base">
-                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
-                            <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                    </div>
-                </div>
-
-                <div class = "col-md-4">
-                    <div class="card-base">
-                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
-                            <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                    </div>
-                </div>
-
-                <div class = "col-md-4">
-                    <div class="card-base">
-                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
-                            <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                    </div>
-                </div>
-
-                <div class = "col-md-4">
-                    <div class="card-base">
-                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
-                            <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                    </div>
-                </div>
-
-                <div class = "col-md-4">
-                    <div class="card-base">
-                        <div class="card-icon"><a href="#" title="Widgets" id="widgetCardIcon" class="imagecard"><span class="glyphicon glyphicon-briefcase"></span></a>
-                            <div class="card-data widgetCardData">
-                                <h2 class="box-title">Azienda</h2>
-                                <p class="card-block text-center">Rich, Adaptive, Mobile-First Widgets. Driven by deep User Centered Analysis and Research.</p>
-                                <a href="#" title="Style Builder" class="anchor btn btn-default"> <i class="fa fa-paper-plane" aria-hidden="true"></i>  Explore More </a>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                    </div>
                 </div>
 
             </div>

@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row company_detail">
         <div class="col-xs-12 col-sm-4 col-md-4 text-center">
-            <h3>ATTIVITA {{ciao}}</h3>
+            <h3>ATTIVITA</h3>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-4 text-center">
             <h3>DOVE</h3>
@@ -46,14 +46,13 @@
 
                 <li ng-repeat="list in lists" >
                     <time datetime="2014-07-20">
-                        <span class="day">4</span>
-                        <span class="month">Jul</span>
+                        <span class="day">{{list.data_n}}</span>
+                        <span class="month">{{list.data_m}}</span>
                         <span class="year">2014</span>
                         <span class="time">ALL DAY</span>
                     </time>
                     <div class="info" ng-click="openList_1 = !openList_1" role="button">
-                        <h2 class="title"><a href="#">{{list}}</a></h2>
-                        <p class="desc">United States Holiday</p>
+                        <h2 class="title"><a href="#">{{list.titolo}}</a></h2>
                     </div>
                     <div class="social">
                         <ul>
@@ -65,29 +64,12 @@
 
                     <div ng-show="openList_1" id="openList_1" class="open_list">
                         <ul class="list-group">
-                            <li class="list-group-item">
+                            <li class="list-group-item" ng-repeat="product in products">
                                 <span class="badge green" role="button" ng-click="openModal()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
                                 <span class="badge brown">5</span>
-                                Patate (1kg)
+                                {{product}} (1kg)
                             </li>
 
-                            <li class="list-group-item">
-                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
-                                <span class="badge brown">7</span>
-                                Pomodori (1kg)
-                            </li>
-
-                            <li class="list-group-item">
-                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
-                                <span class="badge brown">2</span>
-                                Grano (1k)
-                            </li>
-
-                            <li class="list-group-item">
-                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
-                                <span class="badge brown">6</span>
-                                Ceci (1kg)
-                            </li>
                         </ul>
                     </div>
                     

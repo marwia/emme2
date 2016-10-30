@@ -63,7 +63,6 @@ angular.module('appRoutes', []).config([
                 }]
             })
 
-
         // disabilito la necessità dei # nelle URL
         $locationProvider.html5Mode(true);
 

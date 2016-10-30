@@ -77,7 +77,7 @@ body{
 }
 
 .box-title{
-    color: rgb(23, 131, 9);
+    color: saddlebrown;
 }
 
 .widgetCardData .btn{
@@ -335,4 +335,8 @@ ul{
 
     .list-group-item{
         height: 50px;
+    }
+
+    .modal_form{
+        padding-bottom: 20px;
     }
