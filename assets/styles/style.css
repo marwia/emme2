@@ -1,10 +1,338 @@
+body{
+    padding-top: 50px;
+}
+
 #navbar{
     background-color: mediumseagreen;
+    border: 0;
 }
 
 .horizontal-collapse {
-    height: 70px;
+
 }
+
 .navbar-collapse.in {
     overflow-y: hidden;
 }
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li{
+    margin-right: 20px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+
+.angular-google-map,
+.angular-google-map-container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  padding-right: -15px;
+}
+
+.input_text_home{
+    position: absolute;
+    top: 70%;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-base > .card-icon {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.imagecard { 
+    z-index: 2;
+    display: block;
+    position: relative;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto;
+    color: white;
+}
+.card-base > .card-icon > .card-data {
+    min-height: 250px !important;
+    margin-top: -24px;
+    background: ghostwhite;
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+    min-height: 215px;
+}
+#widgetCardIcon {
+    background: rgb(23, 131, 9) !important;
+    font-size: 28px;
+    line-height: 78px;
+}
+
+.box-title{
+    color: rgb(23, 131, 9);
+}
+
+.widgetCardData .btn{
+    background: rgb(23, 131, 9);
+    color: white;
+    border: 0;
+}
+
+.company_background{
+    width: 100%;
+    height: 300px;
+    background-image: url("/app_image/company.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.company_dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.company_info{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    top: 50px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.company_detail H3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.company_detail H6{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.event-list {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	.event-list > li {
+		background-color: rgb(255, 255, 255);
+		padding: 0px;
+		margin: 0px 0px 20px;
+	}
+	.event-list > li > time {
+		display: inline-block;
+		width: 100%;
+		color: rgb(255, 255, 255);
+		background-color: saddlebrown;
+		padding: 5px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.event-list > li:nth-child(even) > time {
+		background-color: rgb(23, 131, 9);
+	}
+	.event-list > li > time > span {
+		display: none;
+	}
+	.event-list > li > time > .day {
+		display: block;
+		font-size: 56pt;
+		font-weight: 100;
+		line-height: 1;
+	}
+	.event-list > li time > .month {
+		display: block;
+		font-size: 24pt;
+		font-weight: 900;
+		line-height: 1;
+	}
+	.event-list > li > img {
+		width: 100%;
+	}
+	.event-list > li > .info {
+		padding-top: 5px;
+		text-align: center;
+	}
+	.event-list > li > .info > .title {
+		font-size: 17pt;
+		font-weight: 700;
+		margin: 0px;
+	}
+    .event-list > li > .info > .title A{
+		color: inherit;
+        text-decoration: none;
+	}
+	.event-list > li > .info > .desc {
+		font-size: 13pt;
+		font-weight: 300;
+		margin: 0px;
+	}
+	.event-list > li > .info > ul,
+	.event-list > li > .social > ul {
+		display: table;
+		list-style: none;
+		margin: 10px 0px 0px;
+		padding: 0px;
+		width: 100%;
+		text-align: center;
+	}
+	.event-list > li > .social > ul {
+		margin: 0px;
+	}
+	.event-list > li > .info > ul > li,
+	.event-list > li > .social > ul > li {
+		display: table-cell;
+		cursor: pointer;
+		color: rgb(30, 30, 30);
+		font-size: 11pt;
+		font-weight: 300;
+        padding: 3px 0px;
+	}
+    .event-list > li > .info > ul > li > a {
+		display: block;
+		width: 100%;
+		color: rgb(30, 30, 30);
+		text-decoration: none;
+	} 
+    .event-list > li > .social > ul > li {    
+        padding: 0px;
+    }
+    .event-list > li > .social > ul > li > a {
+        padding: 3px 0px;
+	} 
+	.event-list > li > .info > ul > li:hover,
+	.event-list > li > .social > ul > li:hover {
+		color: rgb(30, 30, 30);
+		background-color: rgb(200, 200, 200);
+	}
+	.facebook a,
+	.twitter a,
+	.google-plus a {
+		display: block;
+		width: 100%;
+		color: rgb(75, 110, 168) !important;
+	}
+	.twitter a {
+		color: rgb(79, 213, 248) !important;
+	}
+	.google-plus a {
+		color: rgb(221, 75, 57) !important;
+	}
+	.facebook:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(75, 110, 168) !important;
+	}
+	.twitter:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+	.google-plus:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(221, 75, 57) !important;
+	}
+
+	@media (min-width: 768px) {
+		.event-list > li {
+			position: relative;
+			display: block;
+			width: 100%;
+            max-width: 600px;
+			padding: 0px;
+            margin: 20px auto;
+		}
+		.event-list > li > time,
+		.event-list > li > img  {
+			display: inline-block;
+		}
+		.event-list > li > time,
+		.event-list > li > img {
+			width: 120px;
+			float: left;
+		}
+		.event-list > li > .info {
+			background-color: rgb(245, 245, 245);
+			overflow: hidden;
+		}
+		.event-list > li > time,
+		.event-list > li > img {
+			width: 120px;
+			height: 120px;
+			padding: 0px;
+			margin: 0px;
+		}
+		.event-list > li > .info {
+			position: relative;
+			height: 120px;
+			text-align: left;
+			padding-right: 40px;
+		}	
+		.event-list > li > .info > .title, 
+		.event-list > li > .info > .desc {
+			padding: 0px 10px;
+		}
+		.event-list > li > .info > ul {
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+		}
+		.event-list > li > .social {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			display: block;
+			width: 40px;
+		}
+        .event-list > li > .social > ul {
+            border-left: 1px solid rgb(230, 230, 230);
+        }
+		.event-list > li > .social > ul > li {			
+			display: block;
+            padding: 0px;
+		}
+		.event-list > li > .social > ul > li > a {
+			display: block;
+			width: 40px;
+			padding: 10px 0px 9px;
+		}
+	}
+
+    .open_list .badge{
+        height: 30px;
+        width: 30px;
+        line-height: 2;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .open_list .badge.green{
+        background: rgb(23, 131, 9);
+    }
+
+    .open_list .badge.brown{
+        background: saddlebrown;
+    }
+
+    .list-group-item{
+        height: 50px;
+    }

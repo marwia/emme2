@@ -1,0 +1,100 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="company_background">
+            <div class="company_dark"></div>
+            <div class="company_info">
+                <H1><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></H1>
+                <h1>COMPANY NAME</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row company_detail">
+        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+            <h3>ATTIVITA {{ciao}}</h3>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 text-center">
+            <h3>DOVE</h3>
+            <ul>
+                <li><h6><span class="glyphicon glyphicon-home" aria-hidden="true"></span></h6></li>
+                <li><h6>via fratelli latini 24</h6></li>
+                <li><h6>Lombardia, Milano</h6></li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 text-center">
+            <h3>CONTATTI</h3>
+            <ul>
+                <li><h6><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></h6></li>
+                <li><h6>339 466 2942</h6></li>
+                <li><h6>matt.bolo92@gmail.com</h6></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><hr></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <ul class="event-list">
+
+                <li ng-repeat="list in lists" >
+                    <time datetime="2014-07-20">
+                        <span class="day">4</span>
+                        <span class="month">Jul</span>
+                        <span class="year">2014</span>
+                        <span class="time">ALL DAY</span>
+                    </time>
+                    <div class="info" ng-click="openList_1 = !openList_1" role="button">
+                        <h2 class="title"><a href="#">{{list}}</a></h2>
+                        <p class="desc">United States Holiday</p>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                            <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <div ng-show="openList_1" id="openList_1" class="open_list">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge green" role="button" ng-click="openModal()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+                                <span class="badge brown">5</span>
+                                Patate (1kg)
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+                                <span class="badge brown">7</span>
+                                Pomodori (1kg)
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+                                <span class="badge brown">2</span>
+                                Grano (1k)
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="badge green" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+                                <span class="badge brown">6</span>
+                                Ceci (1kg)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
