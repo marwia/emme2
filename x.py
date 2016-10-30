@@ -40,10 +40,21 @@ def addEmail():
 
     data = json_load_byteified(open('aziende_bio_lombardia.json'))
 
-    for i in range(0,10):
+    for i in range(0,len(data)):
         print data[i]['indirizzo_sede_legale'] + ", " + data[i]['comune_sede_legale']
         g = geocoder.google(data[i]['indirizzo_sede_legale'] + ", " + data[i]['comune_sede_legale'])
         print g.latlng
+        obj = data[i]
+        #setattr(data[i], 'lat', g.latlng[0])
+        #setattr(data[i], 'lng', g.latlng[1])
+        if len(g.latlng) > 1:
+            obj['lat'] = g.latlng[0]
+            obj['lng'] = g.latlng[1]
+            data[i] = obj
+
+    # scrivo le modifiche su file
+    with open('aziende_bio_lombardia.json', 'w') as outfile:
+            json.dump(data, outfile, indent=4)
 
     #with open('aziende_bio_lombardia.json', 'r') as fp:
      #   data = json.load(fp)
